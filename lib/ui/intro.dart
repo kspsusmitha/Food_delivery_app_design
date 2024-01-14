@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery_app_design/ui/register.dart';
 
 
 class introduced extends StatelessWidget {
@@ -42,7 +43,9 @@ class introduced extends StatelessWidget {
                         ),
                         ),
 
-                        ElevatedButton(onPressed: (){}, child: Text("Create Account",style: TextStyle(color: Colors.black.withOpacity(0.5)),),
+                        ElevatedButton(onPressed: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>Register()));
+                        }, child: Text("Create Account",style: TextStyle(color: Colors.black.withOpacity(0.5)),),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.white.withOpacity(0.8),
                         shape: RoundedRectangleBorder(
